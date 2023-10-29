@@ -1,7 +1,5 @@
 name: Install and configure Nginx on CentOS
 on: push
-  hosts: localhost
-  become: true
   tasks:
     - name: Update all packages
       yum:
