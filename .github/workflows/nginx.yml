@@ -17,11 +17,11 @@ tasks:
       state: present
 
   - name: Expose port 80
-     firewalld:
-       service: http
-       permanent: yes
-       state: enabled
-       immediate: yes
+    firewalld:
+      service: http
+      permanent: yes
+      state: enabled
+      immediate: yes
 
   - name: Change working directory
     command: echo "Changing to /opt/bin directory"
