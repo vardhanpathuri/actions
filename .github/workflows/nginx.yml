@@ -1,6 +1,6 @@
 name: Install and configure Nginx on CentOS
 on: push
-tasks:
+jobs:
   - name: Update all packages
     yum:
       name: '*'
